@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "triibu_mod",
+  "version": "${version}",
+  "name": "Triibu's Mod",
+  "description": "A mod made by Triibu",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/triibu_mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.triibu_mod.client.Triibu_modClient"
+    ],
+    "main": [
+      "me.triibu_mod.Triibu_mod"
+    ]
+  },
+  "mixins": [
+    "triibu_mod.mixins.json",
+    {
+      "config": "triibu_mod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
