@@ -14,6 +14,7 @@ loom {
     mods {
         "triibu_mod" {
             sourceSet sourceSets.main
+            sourceSet sourceSets.client
         }
     }
 }

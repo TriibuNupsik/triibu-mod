@@ -5,11 +5,10 @@ import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.Entity;
 
-public class Ball<T extends BallEntity> extends SinglePartEntityModel <T> {
+public class BallModel<T extends BallEntity> extends SinglePartEntityModel <T> {
 	private final ModelPart ball;
-	public Ball(ModelPart root) {
+	public BallModel(ModelPart root) {
 		this.ball = root.getChild("ball");
 	}
 	public static TexturedModelData getTexturedModelData() {
