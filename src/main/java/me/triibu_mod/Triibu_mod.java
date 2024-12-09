@@ -12,5 +12,8 @@ public class Triibu_mod implements ModInitializer {
     @Override
     public void onInitialize() {
         ModEntities.registerModEntities();
+
+        WorldAPI worldAPI = new WorldAPI();
+        worldAPI.StartAPI();
     }
 }
