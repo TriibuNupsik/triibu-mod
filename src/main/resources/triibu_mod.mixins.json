@@ -4,6 +4,7 @@
   "package": "me.triibu_mod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "TriibuMixin"
   ],
   "injectors": {
     "defaultRequire": 1
