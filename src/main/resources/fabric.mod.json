@@ -12,19 +12,12 @@
   "icon": "assets/triibu_mod/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "me.triibu_mod.client.Triibu_modClient"
-    ],
     "main": [
       "me.triibu_mod.Triibu_mod"
     ]
   },
   "mixins": [
-    "triibu_mod.mixins.json",
-    {
-      "config": "triibu_mod.client.mixins.json",
-      "environment": "client"
-    }
+    "triibu_mod.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
